@@ -11,8 +11,6 @@ const getUsers = async () => {
 };
 
 const searchUsers = async text => {
-  console.log(text, 'in function');
-
   const users = await axios.get('https://api.github.com/search/users', {
     params: {
       q: text,
