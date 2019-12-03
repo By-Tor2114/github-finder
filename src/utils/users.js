@@ -10,7 +10,7 @@ const getUsers = async () => {
   return users;
 };
 
-const searchUsers = async text => {
+const searchPeople = async text => {
   const users = await axios.get('https://api.github.com/search/users', {
     params: {
       q: text,
@@ -21,4 +21,15 @@ const searchUsers = async text => {
   return users.data;
 };
 
-export { getUsers, searchUsers };
+const getUser = async username => {
+  const { data } = await axios.get(`https://api.github.com/users/${username}`, {
+    params: {
+      client_id: process.env.REACT_APP_GITHUB_CLIENT_ID,
+      client_secret: process.env.REACT_APP_GITHUB_CLIENT_SECRET
+    }
+  });
+
+  return data;
+};
+
+export { getUsers, searchPeople, getUser };

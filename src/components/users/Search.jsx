@@ -41,13 +41,13 @@ class Search extends Component {
           />
           <input
             type="submit"
-            value="search"
+            value="Search"
             className="btn btn-dark btn-block"
           />
         </form>
         {showClear && (
           <button className="btn btn-light btn-block" onClick={clearUsers}>
-            Clear
+            Clear Search Results
           </button>
         )}
       </div>
