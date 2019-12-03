@@ -116,6 +116,13 @@ img {
   margin: 0.7rem 0;
 }
 
+@media (max-width: 380px) {
+  .card {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
 /* List */
 .list {
   margin: 0.5rem 0;

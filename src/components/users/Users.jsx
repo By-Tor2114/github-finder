@@ -22,10 +22,16 @@ Users.propTypes = {
   isLoading: PropTypes.bool.isRequired
 };
 
+// const userStyle = {
+//   display: 'grid',
+//   gridTemplateColumns: 'repeat(3,1fr',
+//   gap: '1rem'
+// };
+
 const userStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3,1fr',
-  gap: '1rem'
+  display: 'flex',
+  flexWrap: 'wrap',
+  justifyContent: 'space-around'
 };
 
 export default Users;
