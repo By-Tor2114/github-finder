@@ -81,18 +81,29 @@ class User extends Component {
                 )}
               </li>
               <li>
-                {company && (
+                {company ? (
                   <Fragment>
                     <strong>Company: </strong>
                     {company}
                   </Fragment>
+                ) : (
+                  <Fragment>
+                    <strong>Company: </strong>
+                    <em>No company provided on GitHub profile</em>
+                  </Fragment>
                 )}
               </li>
               <li>
-                {blog && (
+                {blog ? (
                   <Fragment>
                     <strong>Website: </strong>
                     {blog}
+                  </Fragment>
+                ) : (
+                  <Fragment>
+                    {' '}
+                    <strong>Website: </strong>
+                    <em>No website provided on GitHub profile</em>
                   </Fragment>
                 )}
               </li>

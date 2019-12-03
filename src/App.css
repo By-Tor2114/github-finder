@@ -116,7 +116,7 @@ img {
   margin: 0.7rem 0;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .card {
     width: 100% !important;
     text-align: center !important;
