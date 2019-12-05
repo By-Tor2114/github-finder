@@ -1,6 +1,6 @@
-# GutHub Finder
+# GitHub Finder
 
-A simple React ap for searching GitHub accounts. The search function extends to the information stored within the user profile, so search terms will also return results based on a user's actual name, as well as their username.
+A simple React app for searching GitHub accounts. The search function extends to the information stored within the user profile, so search terms will also return results based on a user's actual name, as well as their username.
 
 This was created using standard HTML, CSS and React. API calls were made using Axios.
 
@@ -16,7 +16,7 @@ https://gitlocater.netlify.com/
 npm i
 ```
 
-2. #### With all dependencies installed, the local server can be started with the following:
+2. #### With all dependencies installed, the local server can be started with:
 
 ```
 npm start
